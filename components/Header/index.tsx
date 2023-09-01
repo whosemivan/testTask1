@@ -2,16 +2,30 @@
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import logo from '../../public/logo.svg'
-import { useState } from 'react'
-import useIsMobile from '@/hooks/useIsMobile'
+import { useState, useEffect } from 'react'
 
 type HeaderProps = {
     setPopupOpen: (arg: boolean) => void;
 };
 
-export default function Header({setPopupOpen}: HeaderProps) {
+export default function Header({ setPopupOpen }: HeaderProps) {
     const [isMenuOpen, setMenuOpen] = useState(false);
-    const isMobile = useIsMobile();
+
+    const [width, setWidth] = useState(() => {
+        return typeof window !== 'undefined' ? window.innerWidth : 0;
+    });
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+
+    const isMobile = width <= 1380;
 
     return (
         <header className={styles.header}>
