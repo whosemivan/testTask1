@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image'
 import styles from './page.module.scss'
 import TopHeader from '@/components/TopHeader';
 import Header from '@/components/Header';
