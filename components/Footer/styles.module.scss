@@ -1,0 +1,182 @@
+.footer {
+    background-color: #444444;
+
+    .wrapper {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            width: 13%;
+            margin-right: 110px;
+
+            .logoFooter {
+                margin-bottom: 22px;
+            }
+
+            .text {
+                margin-bottom: 30px;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 131.688%;
+                color: #FFF;
+            }
+
+            .list {
+                display: flex;
+                width: 113px;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background: #FFF;
+
+                    .link {
+                        padding-top: 3px;
+                    }
+
+                    .fb,
+                    .inst {
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    .vk {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .container {
+                        color: #444444;
+                    }
+
+                    &:hover {
+                        background: #009FE3;
+                        
+                        .container {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .phoneNumber {
+                margin-bottom: 11px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 94.688%;
+                color: #FFF;
+            }
+
+            .callMeText,
+            .email {
+                margin-bottom: 11px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 94.688%;
+                color: #FFF;
+            }
+        }
+
+        .phoneBlock {
+            margin-right: 169px;
+            width: 148px;
+        }
+
+
+        .footerNav {
+            margin-right: 173px;
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                .item {
+                    margin-top: -9px;
+                }
+
+                .link {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 200.187%;
+                    color: #FFF;
+
+                    &:hover {
+                        color: #009FE3;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .bottomPanel {
+        border-top: 1px solid #5C5C5C;
+
+        .wrapper {
+            display: flex;
+            justify-content: flex-end;
+            gap: 35px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 13px 0;
+
+            .panelLink {
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 131.688%;
+                color: #FFF;
+
+                &:hover {
+                    color: #009FE3;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1380px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            gap: 20px;
+
+            .block {
+                margin-right: 0;
+                width: 100%;
+            }
+
+            .footerNav {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+        .bottomPanel {
+            .wrapper {
+                align-items: flex-start;
+                gap: 11px;
+            }
+        }
+    }
+}

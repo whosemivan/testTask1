@@ -1,0 +1,40 @@
+.textWrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 58px;
+        width: 65%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138%;
+        color: #000;
+    }
+}
+
+.cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 105px;
+}
+
+@media(max-width: 1380px) {
+    .textWrapper {    
+        .text {
+            width: 100%;
+        }
+    }
+
+    .cardWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

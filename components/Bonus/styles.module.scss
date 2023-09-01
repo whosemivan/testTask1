@@ -1,0 +1,74 @@
+.bonus {
+    padding: 75px 0;
+    background-color: #F3F9FE;
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+            width: 45%;
+            margin: 0;
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: 33px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 97.687%;
+            text-transform: uppercase;
+            color: #1A1A1A;
+        }
+
+        .btnWrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+
+            .link {
+                display: flex;
+                align-items: center;
+                padding: 18px 32px;
+                border-radius: 100px;
+                background: #ffffff;
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+                color: #000;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 97.687%;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .fbIcon {
+            width: 32px;
+            height: 31px;
+            margin-right: 18px;
+        }
+
+        .vkIcon {
+            width: 33px;
+            height: 32px;
+            margin-right: 18px;
+        }
+    }
+
+    @media(max-width: 1380px) {
+        .wrapper {
+            .title {
+                width: 100%;
+            }
+
+            .btnWrapper {
+                flex-direction: column;
+            }
+        }
+    }
+}
