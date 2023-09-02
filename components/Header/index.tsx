@@ -144,7 +144,10 @@ export default function Header({ setPopupOpen }: HeaderProps) {
                                 </li>
                             </ul>
                         </nav>
-                        <button className={styles.callMeBtn} type='button'>
+                        <button onClick={() => {
+                            setPopupOpen(true);
+                            setMenuOpen(false);
+                        }} className={styles.callMeBtn} type='button'>
                             Перезвоните мне
                         </button>
                     </div>
